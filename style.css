@@ -1,0 +1,213 @@
+/* Background Video */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  object-fit: cover;
+  opacity: 1; /* Adjust for desired transparency */
+}
+
+.search-container {
+  margin-bottom: 20px;
+}
+
+.search-container input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+/* Members Container with Transparency */
+.members-container {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8); /* 80% transparent background */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+/* Member Profile Styling */
+.member {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+
+.member-info {
+  display: flex;
+  align-items: center;
+}
+
+.member-details {
+  flex-grow: 1; /* Allow this to take remaining space */
+}
+
+.member-details h3,
+.member-details p {
+  margin: 5px 0;
+}
+
+/* Member Stats Section */
+.member-stats {
+  margin-left: 20px; /* Space between text and stats image */
+}
+
+.stats-image {
+  width: 100px; /* Adjust size as needed */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Active / Inactive Styling */
+.active {
+  color: green;
+  font-weight: bold;
+}
+
+.inactive {
+  color: red;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+/* Centered and Transparent Login Container */
+.login-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.2); /* 80% transparency */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: center;
+}
+
+.insta-link {
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.insta-logo {
+  width: 30px; /* Adjust the size as needed */
+  height: 30px;
+  transition: transform 0.2s ease;
+}
+
+.insta-logo:hover {
+  transform: scale(1.1);
+}
+
+/* Member Container Styling */
+.member {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+
+.member h3 {
+  margin: 0;
+}
+
+.member p {
+  margin: 5px 0;
+}
+
+/* Active / Inactive Styling */
+.active {
+  color: green;
+  font-weight: bold;
+}
+
+.inactive {
+  color: red;
+  font-weight: bold;
+}
+
+/* Member Stats Section */
+.member-stats {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.member-stats h4 {
+  margin: 0;
+  font-size: 1.1em;
+  color: #333;
+}
+
+/* Statistics Image Styling */
+.stats-image {
+  margin-top: 5px;
+  width: 100%;
+  max-width: 500px; /* Adjust size as needed */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Members Container with Transparency */
+.members-container {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.5); /* 80% transparent background */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+h2 {
+  text-align: center;
+}
+
+.members-list {
+  margin-top: 20px;
+}
+
+
+
+
+
+input[type="text"],
+input[type="password"],
+button {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #28a745;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+#error-message {
+  color: red;
+  font-size: 0.9em;
+}

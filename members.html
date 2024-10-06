@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Clan Members</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Inline styles for quick testing; ideally, these should go in style.css */
+    .search-container {
+      margin-bottom: 20px;
+    }
+    .search-container input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .copyright {
+      text-align: center;
+      margin-top: 20px;
+      color: white; /* Change text color as needed */
+    }
+  </style>
+</head>
+<body>
+  <!-- Background Video -->
+  <video autoplay muted loop id="bg-video">
+    <source src="background-video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="members-container">
+    <h2>Clan Members</h2>
+    
+    <!-- Search Bar -->
+    <div class="search-container">
+      <input type="text" id="searchBar" placeholder="Search by User ID..." onkeyup="filterMembers()">
+    </div>
+
+    <div class="members-list" id="membersList">
+      <!-- Existing Members -->
+      <div class="member" data-userid="Ermal_1004">
+        <div class="member-info">
+          <div class="member-details">
+            <h3>Nickname: Flash</h3>
+            <p>User ID: Ermal_1004</p>
+            <p>Instagram: <a href="https://instagram.com/flashxeds" target="_blank">@flashxeds</a></p>
+            <p>Status: <span class="active">Active</span></p>
+          </div>
+          <div class="member-stats">
+            <img src="flashstats.png" alt="Flash's Statistics" class="stats-image">
+          </div>
+        </div>
+      </div>
+
+      <div class="member" data-userid="Bido_59">
+        <div class="member-info">
+          <div class="member-details">
+            <h3>Nickname: Bido_idoo</h3>
+            <p>User ID: Bido_59</p>
+            <p>Instagram: <a href="https://instagram.com/bido_idoo" target="_blank">@bido_idoo</a></p>
+            <p>Status: <span class="active">Active</span></p>
+          </div>
+          <div class="member-stats">
+            <img src="bidostats.png" alt="Bido_idoo's Statistics" class="stats-image">
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional Members -->
+      <div class="member" data-userid="Player_2916879">
+        <div class="member-info">
+          <div class="member-details">
+            <h3>Nickname: Ztar</h3>
+            <p>User ID: Player_2916879</p>
+            <p>Instagram: <a href="https://instagram.com/ztar.io" target="_blank">@ztar.io</a></p>
+            <p>Status: <span class="active">Active</span></p>
+          </div>
+          <div class="member-stats">
+            <img src="ztarstats.png" alt="Ztar's Statistics" class="stats-image">
+          </div>
+        </div>
+      </div>
+
+      <div class="member" data-userid="Guest_255087982">
+        <div class="member-info">
+          <div class="member-details">
+            <h3>Nickname: Ganxha</h3>
+            <p>User ID: Guest_255087982</p>
+            <p>Instagram: <a href="https://instagram.com/gani.cocaj" target="_blank">@gani.cocaj</a></p>
+            <p>Status: <span class="active">Active</span></p>
+          </div>
+          <div class="member-stats">
+            <img src="ganistats.png" alt="Gani's Statistics" class="stats-image">
+          </div>
+        </div>
+      </div>
+
+      <div class="member" data-userid="Adrian_140522">
+        <div class="member-info">
+          <div class="member-details">
+            <h3>Nickname: Adrian</h3>
+            <p>User ID: Adrian_140522</p>
+            <p>Instagram: <a href="https://instagram.com/_adrian_b_10" target="_blank">@_adrian_b_10</a></p>
+            <p>Status: <span class="active">Sometimes :)</span></p>
+          </div>
+          <div class="member-stats">
+            <img src="adrianstats.png" alt="Adrians's Statistics" class="stats-image">
+          </div>
+        </div>
+      </div>
+
+      <div class="member" data-userid="Mmc_55">
+        <div class="member-info">
+          <div class="member-details">
+            <h3>Nickname: Nami</h3>
+            <p>User ID: Mmc_55</p>
+            <p>Instagram: <a href="https://instagram.com/nami.io09" target="_blank">@nami.io09</a></p>
+            <p>Status: <span class="active">Active</span></p>
+          </div>
+          <div class="member-stats">
+            <img src="namistats.png" alt="Wolf's Statistics" class="stats-image">
+          </div>
+        </div>
+      </div>
+
+      <div class="member" data-userid="Myrteza_10">
+        <div class="member-info">
+          <div class="member-details">
+            <h3>Nickname: Braha</h3>
+            <p>User ID: Myrteza_10</p>
+            <p>Instagram: <a href="https://instagram.com/m_braha" target="_blank">@m_braha</a></p>
+            <p>Status: <span class="active">Active</span></p>
+          </div>
+          <div class="member-stats">
+            <img src="brahastats.png" alt="Braha's Statistics" class="stats-image">
+          </div>
+        </div>
+      </div>
+
+      <div class="member" data-userid="Xristoforos_145">
+        <div class="member-info">
+          <div class="member-details">
+            <h3>Nickname: Xenozz</h3>
+            <p>User ID: Xristoforos_145</p>
+            <p>Instagram: <a href="https://instagram.com/xenozz.io" target="_blank">@xenozz.io</a></p>
+            <p>Status: <span class="active">Active</span></p>
+          </div>
+          <div class="member-stats">
+            <img src="xenozzstats.png" alt="Xenozz's Statistics" class="stats-image">
+          </div>
+        </div>
+      </div>
+
+      <div class="member" data-userid="Andi_12702">
+        <div class="member-info">
+          <div class="member-details">
+            <h3>Nickname: Caesar</h3>
+            <p>User ID: Andi_12702</p>
+            <p>Instagram: <a href="https://instagram.com/a71812024" target="_blank">@a71812024</a></p>
+            <p>Status: <span class="active">Active</span></p>
+          </div>
+          <div class="member-stats">
+            <img src="caesarstats.png" alt="Caesar's Statistics" class="stats-image">
+          </div>
+        </div>
+      </div>
+
+      <div class="member" data-userid="Player_2830568">
+        <div class="member-info">
+          <div class="member-details">
+            <h3>Nickname: Tironsi</h3>
+            <p>User ID: Player_2830568</p>
+            <p>Instagram: <a href="https://instagram.com/user.notf0oundd08" target="_blank">@user.notf0oundd08</a></p>
+            <p>Status: <span class="active">Active</span></p>
+          </div>
+          <div class="member-stats">
+            <img src="tironsistats.png" alt="Tironsi's Statistics" class="stats-image">
+          </div>
+        </div>
+      </div>
+
+      <div class="member" data-userid="Camilo_38591">
+        <div class="member-info">
+          <div class="member-details">
+            <h3>Nickname: Camilo</h3>
+            <p>User ID: Camilo_38591</p>
+            <p>Instagram: <a href="https://instagram.com/camilo.660" target="_blank">@camilo.660</a></p>
+            <p>Status: <span class="active">Active</span></p>
+          </div>
+          <div class="member-stats">
+            <img src="camilostats.png" alt="Camilo's Statistics" class="stats-image">
+          </div>
+        </div>
+      </div>
+
+      <div class="member" data-userid="Zephyr_55">
+        <div class="member-info">
+          <div class="member-details">
+            <h3>Nickname: Zephyr</h3>
+            <p>User ID: Zephyr_55</p>
+            <p>Instagram: <a href="https://instagram.com/zephyr_55" target="_blank">@zephyr_55</a></p>
+            <p>Status: <span class="inactive">Inactive</span></p>
+          </div>
+          <div class="member-stats">
+            <img src="zephyrstats.png" alt="Zephyr's Statistics" class="stats-image">
+          </div>
+        </div>
+      </div>
+
+      <div class="member" data-userid="Talon_77">
+        <div class="member-info">
+          <div class="member-details">
+            <h3>Nickname: Talon</h3>
+            <p>User ID: Talon_77</p>
+            <p>Instagram: <a href="https://instagram.com/talon_77" target="_blank">@talon_77</a></p>
+            <p>Status: <span class="active">Active</span></p>
+          </div>
+          <div class="member-stats">
+            <img src="talonstats.png" alt="Talon's Statistics" class="stats-image">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Copyright Section -->
+  <div class="copyright">
+    <p> <img src="copyright-icon.png" alt="Copyright Icon" style="width: 20px; vertical-align: middle;"> HP</p>
+  </div>
+
+  <script>
+    function filterMembers() {
+      const input = document.getElementById('searchBar');
+      const filter = input.value.toLowerCase();
+      const members = document.getElementById('membersList').getElementsByClassName('member');
+
+      for (let i = 0; i < members.length; i++) {
+        const userId = members[i].getAttribute('data-userid').toLowerCase();
+        if (userId.includes(filter)) {
+          members[i].style.display = ""; // Show the member
+        } else {
+          members[i].style.display = "none"; // Hide the member
+        }
+      }
+    }
+  </script>
+</body>
+</html>
